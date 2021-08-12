@@ -1,0 +1,119 @@
+<?xml version = ″1.0″ encoding = ″utf-8″ ?>
+<!DOCTYPE html PUBLIC ″-//W3C//DTD XHTML 1.0 Strict//EN″
+     http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd>
+<!-- group_project.html
+	 Steven Swift, Lucas Smallcomb
+	 smallco1@umbc.edu
+	 IS 448
+	 Group Project
+     -->
+<html xmlns = ″http://www.w3.org/1999/xhtml″>
+  <head> <title> Madlibs </title>
+	<style>
+		.wholeDiv {
+			padding-right: 180px;
+			padding-left: 180px;
+		}
+		.textDiv {
+			white-space: nowrap;
+			display: inline-block;
+			color: blue;
+			}
+	</style>
+  </head>
+  <body>
+    <div class="wholeDiv">
+	<p>
+	  <h1>Madlib</h1>
+      <em>By Steven Swift and Lucas Smallcomb</em>
+	  <br />Text source: https://www.madlibs.com/<br />
+	  <hr>
+	  <h3>Adjectives</h3>
+		<br />Flip-flops are a staple of any <div id="result1" class="textDiv"> ____ </div> summer wardrobe.<br />
+		<br />If you're going to challenge a couple to a chicken fight during spring break, 
+		make sure they're more <div id="result2" class="textDiv"> ____ </div> than you!<br />
+		<br />Once that <div id="result3" class="textDiv"> ____ </div> music comes on, it's time to shut down your acceptance speech!<br /><br>
+		
+		<form>
+			First Adj: <input type="text" id= "adj1" size="10"><br>
+			Second Adj: <input type="text" id= "adj2" size="10"><br>
+			Third Adj: <input type="text" id= "adj3" size="10"><br>
+			<button type="button" onclick="adjectives()"> Submit </button>
+		</form>
+	  
+	  
+	  <hr>
+	  <h3>Nouns</h3>
+		<br />Be careful not to vacuum the <div id="result4" class="textDiv"> ____ </div>  when you clean under your bed.<br />
+		<br />Love is what makes the <div id="result5" class="textDiv"> ____ </div>  go round.<br />
+		<br />What came first, the chicken or the <div id="result6" class="textDiv"> ____ </div> ?<br /><br>
+	  
+		<form>
+			First Noun: <input type="text" id= "noun1" size="10"><br>
+			Second Noun: <input type="text" id= "noun2" size="10"><br>
+			Third Noun: <input type="text" id= "noun3" size="10"><br>
+			<button type="button" onclick="nouns()"> Submit </button>
+		</form>	  
+	  
+	  <hr>
+	  <h3>Verbs</h3>
+		<br />There's nothing quite like a good <div id="result7" class="textDiv"> ____ </div> to start the day.<br />
+		<br />My daily exercise is <div id="result8" class="textDiv"> ____ </div> after my school bus in the morning!<br />
+		<br />You're not gonna believe what happened when I <div id="result9" class="textDiv"> ____ </div> the car yesterday.<br /><br>
+	 
+		<form>
+			First Verb: <input type="text" id= "verb1" size="10"><br>
+			Verb Ending in -ing: <input type="text" id= "verb3" size="10"><br>
+			Past Tense Verb: <input type="text" id= "verb2" size="10"><br>
+			<button type="button" onclick="verbs()"> Submit </button>
+		</form>		 
+	  
+	  
+	  <hr>
+	  <h3>Story</h3>
+	  <br />A vacation is when you take a trip to some <div id="result10" class="textDiv"> ____ </div> place
+	   with your <div id="result11" class="textDiv"> ____ </div> family. Usually you go to some place that
+	    is near (a/an) <div id="result12" class="textDiv"> ____ </div> or up on (a/an) <div id="result13" class="textDiv"> ____ </div>. A good vacation
+		 place is one where you can ride <div id="result14" class="textDiv"> ____ </div> or play
+		 <div id="result15" class="textDiv"> ____ </div> or go hunting for <div id="result16" class="textDiv"> ____ </div>. I like to spend
+		 my time <div id="result17" class="textDiv"> ____ </div> or <div id="result18" class="textDiv"> ____ </div>.
+		  When parents go on a vacation, they spend their time eating
+		   three <div id="result19" class="textDiv"> ____ </div> a day, and fathers play golf, and
+		    mothers sit around <div id="result20" class="textDiv"> ____ </div>. Last summer,
+			 my little brother fell in (a/an) <div id="result21" class="textDiv"> ____ </div> and got poison
+			  <div id="result22" class="textDiv"> ____ </div> all over his <div id="result23" class="textDiv"> ____ </div>. My family is going
+			   to go to (the) <div id="result24" class="textDiv"> ____ </div>, and I will practice
+			    <div id="result25" class="textDiv"> ____ </div>. Parents need vacations more
+				 than kids because parents are always very <div id="result26" class="textDiv"> ____ </div>, and
+				  because they have to work <div id="result27" class="textDiv"> ____ </div> hours every day
+				   all year making enough <div id="result28" class="textDiv"> ____ </div> to pay for the
+				   vacation.<br />
+		
+		<form>
+			Adj: <input type="text" id= "story1" size="10"><br>
+			Adj: <input type="text" id= "story2" size="10"><br>
+			Noun: <input type="text" id= "story3" size="10"><br>
+			Noun: <input type="text" id= "story4" size="10"><br>
+			Plural Noun: <input type="text" id= "story5" size="10"><br>
+			Game: <input type="text" id= "story6" size="10"><br>
+			Plural Noun: <input type="text" id= "story7" size="10"><br>
+			Verb Ending in -ing: <input type="text" id= "story8" size="10"><br>
+			Verb Ending in -ing: <input type="text" id= "story9" size="10"><br>
+			Plural Noun: <input type="text" id= "story10" size="10"><br>
+			Verb Ending in -ing: <input type="text" id= "story11" size="10"><br>
+			Noun: <input type="text" id= "story12" size="10"><br>
+			Plant: <input type="text" id= "story13" size="10"><br>
+			Body Part: <input type="text" id= "story14" size="10"><br>
+			Place: <input type="text" id= "story15" size="10"><br>
+			Verb Ending in -ing: <input type="text" id= "story16" size="10"><br>
+			Adj: <input type="text" id= "story17" size="10"><br>
+			Number: <input type="text" id= "story18" size="10"><br>
+			Plural Noun: <input type="text" id= "story19" size="10"><br>
+			<button type="button" onclick="story()"> Submit </button>
+		</form>	
+		
+    </p><br><br><br><br><br><br><br><br>
+  </div>
+  </body>
+  <script src="group project.js"></script>
+</html>
